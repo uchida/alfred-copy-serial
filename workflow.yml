@@ -1,8 +1,8 @@
 bundleid: net.turbare.copy-serial
 connections:
-  16039760-F173-4AB8-9C73-DA7401D5DE23: []
-  2C835D13-3A2F-4B3F-ADEF-B4F6FA3CE151:
-  - destinationuid: 16039760-F173-4AB8-9C73-DA7401D5DE23
+  copy_serial: []
+  get_serial:
+  - destinationuid: copy_serial
 createdby: Akihiro Uchida
 description: copy serial number to clipboard
 disabled: false
@@ -11,19 +11,19 @@ objects:
 - config:
     argumenttype: 2
     keyword: serial
-    script: !include './2C835D13-3A2F-4B3F-ADEF-B4F6FA3CE151'
+    script: !include './get_serial'
     title: copy serial number
     withspace: false
   type: alfred.workflow.input.scriptfilter
-  uid: 2C835D13-3A2F-4B3F-ADEF-B4F6FA3CE151
+  uid: get_serial
 - config:
-    script: !include './16039760-F173-4AB8-9C73-DA7401D5DE23'
+    script: !include './copy_serial'
   type: alfred.workflow.action.script
-  uid: 16039760-F173-4AB8-9C73-DA7401D5DE23
-readme: ''
+  uid: copy_serial
+readme: '!include README'
 uidata:
-  16039760-F173-4AB8-9C73-DA7401D5DE23:
+  copy_serial:
     ypos: 60.0
-  2C835D13-3A2F-4B3F-ADEF-B4F6FA3CE151:
+  get_serial:
     ypos: 60.0
 webaddress: turbare.net

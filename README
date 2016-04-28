@@ -1,0 +1,26 @@
+# alfred-copy-serial
+
+![Version](https://img.shields.io/github/tag/uchida/alfred-copy-serial.svg)
+[![License](https://img.shields.io/github/license/uchida/alfred-copy-serial.svg)](https://tldrlegal.com/license/creative-commons-cc0-1.0-universal)
+[![CircleCI](https://img.shields.io/circleci/project/uchida/alfred-copy-serial.svg)](https://circleci.com/gh/uchida/alfred-copy-serial)
+
+## Description
+
+This is an Alfred 2 workflow to copy serial number for Mac to clipboard
+
+## Usage
+
+1. Type `serial` into Alfred
+2. get S/N for your Mac, and then press `return`
+3. S/N copied to clipboard
+
+## Installation
+
+Download latest `alfred-copy-serial.alfredworkflow` from
+[Release page](https://github.com/uchida/alfred-copy-serial/releases).
+Open `alfred-copy-serial.alfredworkflow` with Alfred.
+
+## License
+
+[![CC0](http://i.creativecommons.org/p/zero/1.0/88x31.png "CC0")](http://creativecommons.org/publicdomain/zero/1.0/deed)
+dedicated to public domain
