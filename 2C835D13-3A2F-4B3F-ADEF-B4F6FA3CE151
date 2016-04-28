@@ -1,0 +1,13 @@
+#!/bin/bash
+
+serial=$(/usr/sbin/system_profiler SPHardwareDataType -xml | plutil -extract '0._items.0.serial_number' xml1 -o - - | xpath '/plist/string/text()' 2>/dev/null)
+
+cat <<__EOF__
+<?xml version="1.0"?>
+<items>
+  <item uid="$serial" arg="$serial">
+    <title>$serial</title>
+    <subtitle>copy $serial to clipboard</subtitle>
+  </item>
+</items>
+__EOF__
